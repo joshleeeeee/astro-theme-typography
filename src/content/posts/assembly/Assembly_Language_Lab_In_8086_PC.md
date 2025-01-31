@@ -1,11 +1,8 @@
 ---
 title: 《汇编语言》第4版.王爽 Lab 全集
-tags:
-  - 汇编
 categories:
   - 汇编
-mathjax: true
-pubDate: 2023-08-22 20:56:51
+pubDate: 2023-08-22
 ---
 
 # Assembly Language Lab In 8086PC

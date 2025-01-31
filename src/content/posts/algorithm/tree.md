@@ -1,9 +1,6 @@
 ---
 title: 树和二叉树
-tags:
-  - 树
-  - 考研
-categories: 数据结构
+categories: ['算法与数据结构']
 mathjax: true
 pubDate: 2023-01-23 21:57:29
 ---
@@ -33,7 +30,9 @@ pubDate: 2023-01-23 21:57:29
 
 **优点**：找父节点方便；**缺点**：找孩子不方便
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12654026/1627653257112-c99ea12f-534f-4928-abbb-cbd5c0f8d6ee.png#height=294&id=Cw7nk&margin=%5Bobject%20Object%5D&name=image.png&originHeight=391&originWidth=750&originalType=binary&ratio=1&size=137845&status=done&style=none&width=563)![image.png](https://cdn.nlark.com/yuque/0/2021/png/12654026/1627653414428-39395399-1608-454a-8723-4fb3855163eb.png#height=505&id=BFRdp&margin=%5Bobject%20Object%5D&name=image.png&originHeight=673&originWidth=260&originalType=binary&ratio=1&size=88299&status=done&style=none&width=195)
+![image.png](/images/algorithm/tree-parent-representation.png)
+
+![image.png](/images/algorithm/tree-parent-representation1.png)
 
 上面的树用实际代码(Java)可表示为:
 
@@ -139,14 +138,14 @@ class PTNode<elemType> {
 ## 3. 二叉树的性质
 
 - 设非空二叉树中度为0、1和2的结点个数分别为$n_0$，则$n_0=n_2+1$（叶子结点比二分支结点多一个）。假设树中结点总数为$n$，则：<br />
-  - $$①:n=n_0+n_1+n_2$$
-  - $$②: n=n_1+2n_2+1 （树的结点数=总度数+1）$$
-  - $$① - ②  =>  n_0=n+1$$
+  - $①:n=n_0+n_1+n_2$
+  - $②: n=n_1+2n_2+1 （树的结点数=总度数+1）$
+  - $① - ②  =>  n_0=n+1$
 
 - 二叉树第 $i$ 层至多有$2^{i－1}$个结点(i ≥ 1)
-  - $m$叉树第$ i$ 层至多有$m^{i－1}$个结点(i ≥ 1)<br />
+  - $m$叉树第 $i$ 层至多有$m^{i－1}$个结点(i ≥ 1)<br />
 - 高度为 $h$ 的二叉树至多有$2^h－1$ 个结点(满二叉树)
-  - 高度为$h$的$m$叉树至多有 $\frac{m^h-1}{m-1}$ 个结点<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/12654026/1624858522819-87eef4c6-4cc9-4b45-9123-d5152c000f3f.png#height=266&id=h9KKh&margin=%5Bobject%20Object%5D&name=image.png&originHeight=266&originWidth=817&originalType=binary&ratio=1&size=81465&status=done&style=none&width=817)
+  - 高度为 $h$ 的 $m$ 叉树至多有 $\frac{m^h-1}{m-1}$ 个结点<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/12654026/1624858522819-87eef4c6-4cc9-4b45-9123-d5152c000f3f.png#height=266&id=h9KKh&margin=%5Bobject%20Object%5D&name=image.png&originHeight=266&originWidth=817&originalType=binary&ratio=1&size=81465&status=done&style=none&width=817)
 
 ## 4. 完全二叉树的性质
 
@@ -209,6 +208,7 @@ class TreeNode {
 ```
 ### 5.2 二叉树的链式存储
 $n$个结点的二叉链表共有$n+1$个**空链域<br />**![image.png](https://cdn.nlark.com/yuque/0/2021/png/12654026/1624865206947-ae5653c5-c42f-49f0-9121-153dec4c71a3.png#height=352&id=XpD17&margin=%5Bobject%20Object%5D&name=image.png&originHeight=352&originWidth=596&originalType=binary&ratio=1&size=90534&status=done&style=none&width=596)
+
 ```java
 public class LinkedStorageBinaryTree {
 
@@ -245,8 +245,10 @@ class TreeNodeLinked {
     }
 }
 ```
+
 ## 6. 二叉树的遍历
 ### 6.1 先序遍历(根、左、右)
+
 ```java
 public static void preOrder(TreeNodeLinked tNode) {
     if(tNode != null) {
@@ -259,7 +261,9 @@ public static void preOrder(TreeNodeLinked tNode) {
     }
 }
 ```
+
 ### 6.2 中序遍历(左、根、右)
+
 ```java
 public static void midOrder(TreeNodeLinked tNode) {
     if(tNode != null) {
@@ -272,7 +276,9 @@ public static void midOrder(TreeNodeLinked tNode) {
     }
 }
 ```
+
 ### 6.3 后序遍历(左、右、根)
+
 ```java
 public static void postOrder(TreeNodeLinked tNode) {
     if(tNode != null) {
@@ -285,7 +291,9 @@ public static void postOrder(TreeNodeLinked tNode) {
     }
 }
 ```
+
 ### 6.4 求树的深度(后序遍历算法的变种)
+
 ```java
 public static int treeDepth(TreeNodeLinked t) {
     if (t == null) {
@@ -297,7 +305,9 @@ public static int treeDepth(TreeNodeLinked t) {
     return Math.max(l, r) + 1;
 }
 ```
+
 ### 6.5 层序遍历(BFS)
+
 算法思想:
 
 1. 初始化一个辅助队列

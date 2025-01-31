@@ -1,11 +1,7 @@
 ---
 title: 关于词法分析器
-tags:
-  - Compliers
-categories:
-  - 编译
-mathjax: true
-pubDate: 2023-12-24 10:20:13
+categories: ['编译']
+pubDate: 2023-12-24
 ---
 
 ## 词法分析器

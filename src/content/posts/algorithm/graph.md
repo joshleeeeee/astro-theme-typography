@@ -1,10 +1,6 @@
 ---
 title: 图
-categories: 数据结构
-tags:
-  - 图论
-  - 考研
-mathjax: true
+categories: ['算法与数据结构']
 pubDate: 2022-01-12 19:37:25
 ---
 

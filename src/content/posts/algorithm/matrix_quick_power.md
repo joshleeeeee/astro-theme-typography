@@ -1,13 +1,8 @@
 ---
 title: 矩阵快速幂
-tags:
-  - 算法
-  - 矩阵
-  - 快速幂
 categories:
-  - 算法
-mathjax: true
-pubDate: 2022-03-28 16:00:41
+  - 算法与数据结构
+pubDate: 2022-03-28
 ---
 
 

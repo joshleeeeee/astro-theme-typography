@@ -1,11 +1,7 @@
 ---
 title: 各种数据范围下的算法选择
-tags:
-  - 算法
-  - 技巧
 categories:
-  - 算法
-mathjax: true
+  - 算法与数据结构
 pubDate: 2022-04-08 10:43:04
 ---
 
